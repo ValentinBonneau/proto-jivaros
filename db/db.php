@@ -7,7 +7,7 @@ class db
     private $BDD;
     private $USER;
     private $MDP;
-    private $pdo;
+    public $pdo;
 
     function __construct($url,$bdd,$user,$mdp)
     {
@@ -18,6 +18,10 @@ class db
     }
     function connect(){
         $this->pdo = new PDO("mysql:host=" . $this->SERVER . ";dbname=" . $this->BDD, $this->USER, $this->MDP);
+    }
+
+    function pdo(){
+        return $this->pdo;
     }
 
 }

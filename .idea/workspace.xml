@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7485a954-e0d9-47c5-9822-a1893e1e00ca" name="Default Changelist" comment="" />
+    <list default="true" id="7485a954-e0d9-47c5-9822-a1893e1e00ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/db/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/action/refresh.act.php" beforeDir="false" afterPath="$PROJECT_DIR$/action/refresh.act.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/partial/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/partial/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/private.php" beforeDir="false" afterPath="$PROJECT_DIR$/private.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +32,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="composer.json" />
+        <option value="tsconfig.json" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -43,10 +64,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projet_php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Blog_PHP" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\playlistPots\db" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,17 +88,55 @@
       <workItem from="1629543581535" duration="5641000" />
       <workItem from="1629556115465" duration="1248000" />
       <workItem from="1629626595673" duration="848000" />
+      <workItem from="1629709947704" duration="4611000" />
+      <workItem from="1629992872984" duration="4043000" />
+      <workItem from="1629998146515" duration="2111000" />
+      <workItem from="1630052666984" duration="12610000" />
+      <workItem from="1630090400750" duration="5716000" />
+      <workItem from="1630171472067" duration="6376000" />
+      <workItem from="1630246664841" duration="1693000" />
+      <workItem from="1630255303668" duration="5876000" />
+      <workItem from="1630270963795" duration="4038000" />
     </task>
+    <task id="LOCAL-00001" summary="start ( api youtube dèjà fonctionelle )">
+      <created>1629710500944</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629710500944</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start ( api youtube dèjà fonctionelle )" />
+    <option name="LAST_COMMIT_MESSAGE" value="start ( api youtube dèjà fonctionelle )" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="933" y="187" key="FileChooserDialogImpl" timestamp="1629141178073">
+    <state x="194" y="274" key="#SQL_Dialects" timestamp="1630053278794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="933" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1629141178073" />
+    <state x="194" y="274" key="#SQL_Dialects/0.0.1536.864@0.0.1536.864" timestamp="1630053278794" />
+    <state x="933" y="187" key="FileChooserDialogImpl" timestamp="1630172408763">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="933" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630172408763" />
+    <state x="933" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1629998131047" />
     <state x="595" y="155" key="NewPhpClassDialog" timestamp="1629140439225">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -86,5 +150,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="555" y="77" key="SettingsEditor/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1629140736070" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1629710513928">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1629710513928" />
+    <state x="570" y="339" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1629710107480">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="570" y="339" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.864@0.0.1536.864" timestamp="1629710107480" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1630067731057">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1630067731057" />
   </component>
 </project>
