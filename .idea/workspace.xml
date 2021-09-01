@@ -11,16 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7485a954-e0d9-47c5-9822-a1893e1e00ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/action/addNewTag.act.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/action/deleteFromVideo.act.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/action/deleteTag.act.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/action/renameTag.act.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partial/tagList.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/partial/unsetTagList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/playlistPots.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/playlistPots.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partial/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/partial/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +107,7 @@
       <workItem from="1630415589687" duration="1984000" />
       <workItem from="1630433311282" duration="3572000" />
       <workItem from="1630444008553" duration="6444000" />
-      <workItem from="1630489102167" duration="2815000" />
+      <workItem from="1630489102167" duration="3508000" />
     </task>
     <task id="LOCAL-00001" summary="start ( api youtube dèjà fonctionelle )">
       <created>1629710500944</created>
@@ -132,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630275262235</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tag fini et fonctionelle">
+      <created>1630505225872</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1630505225872</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +151,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start ( api youtube dèjà fonctionelle )" />
     <MESSAGE value="db fonctionelle , les videos sont ajouter a l'interieur &#10;ajout des boutons tag (juste front)" />
-    <option name="LAST_COMMIT_MESSAGE" value="db fonctionelle , les videos sont ajouter a l'interieur &#10;ajout des boutons tag (juste front)" />
+    <MESSAGE value="tag fini et fonctionelle" />
+    <option name="LAST_COMMIT_MESSAGE" value="tag fini et fonctionelle" />
   </component>
   <component name="WindowStateProjectService">
     <state x="194" y="274" key="#SQL_Dialects" timestamp="1630413653028">
@@ -161,6 +160,10 @@
     </state>
     <state x="194" y="274" key="#SQL_Dialects/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630413653028" />
     <state x="194" y="274" key="#SQL_Dialects/0.0.1536.864@0.0.1536.864" timestamp="1630053278794" />
+    <state x="256" y="288" key="#SQL_Resolution_Scopes" timestamp="1630505349496">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="256" y="288" key="#SQL_Resolution_Scopes/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630505349496" />
     <state x="361" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630445491587">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -187,6 +190,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="398" y="82" key="SettingsEditor/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630489804407" />
+    <state width="321" height="441" key="SqlResolveConfigurable" timestamp="1630505338607">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="321" height="441" key="SqlResolveConfigurable/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630505338607" />
     <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1630275281813">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
