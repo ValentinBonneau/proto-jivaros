@@ -11,13 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7485a954-e0d9-47c5-9822-a1893e1e00ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db/db.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/action/addNewTag.act.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/action/deleteFromVideo.act.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/action/deleteTag.act.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/action/renameTag.act.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/partial/tagList.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/partial/unsetTagList.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/playlistPots.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/playlistPots.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/action/refresh.act.php" beforeDir="false" afterPath="$PROJECT_DIR$/action/refresh.act.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/db/db.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/partial/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/partial/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/private.php" beforeDir="false" afterPath="$PROJECT_DIR$/private.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +41,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -62,11 +71,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Blog_PHP" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -96,7 +106,17 @@
       <workItem from="1630171472067" duration="6376000" />
       <workItem from="1630246664841" duration="1693000" />
       <workItem from="1630255303668" duration="5876000" />
-      <workItem from="1630270963795" duration="4038000" />
+      <workItem from="1630270963795" duration="6324000" />
+      <workItem from="1630277563756" duration="1249000" />
+      <workItem from="1630312023865" duration="1720000" />
+      <workItem from="1630321732501" duration="2115000" />
+      <workItem from="1630343192055" duration="5425000" />
+      <workItem from="1630355978469" duration="3878000" />
+      <workItem from="1630405813195" duration="7138000" />
+      <workItem from="1630415589687" duration="1984000" />
+      <workItem from="1630433311282" duration="3572000" />
+      <workItem from="1630444008553" duration="6444000" />
+      <workItem from="1630489102167" duration="2815000" />
     </task>
     <task id="LOCAL-00001" summary="start ( api youtube dèjà fonctionelle )">
       <created>1629710500944</created>
@@ -105,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629710500944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="db fonctionelle , les videos sont ajouter a l'interieur &#10;ajout des boutons tag (juste front)">
+      <created>1630275262235</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630275262235</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,35 +152,50 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start ( api youtube dèjà fonctionelle )" />
-    <option name="LAST_COMMIT_MESSAGE" value="start ( api youtube dèjà fonctionelle )" />
+    <MESSAGE value="db fonctionelle , les videos sont ajouter a l'interieur &#10;ajout des boutons tag (juste front)" />
+    <option name="LAST_COMMIT_MESSAGE" value="db fonctionelle , les videos sont ajouter a l'interieur &#10;ajout des boutons tag (juste front)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="194" y="274" key="#SQL_Dialects" timestamp="1630053278794">
+    <state x="194" y="274" key="#SQL_Dialects" timestamp="1630413653028">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="194" y="274" key="#SQL_Dialects/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630413653028" />
     <state x="194" y="274" key="#SQL_Dialects/0.0.1536.864@0.0.1536.864" timestamp="1630053278794" />
-    <state x="933" y="187" key="FileChooserDialogImpl" timestamp="1630172408763">
+    <state x="361" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1630445491587">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="933" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630172408763" />
+    <state x="361" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630445491587" />
+    <state x="933" y="187" key="FileChooserDialogImpl" timestamp="1630345236372">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="933" y="187" key="FileChooserDialogImpl/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630345236372" />
     <state x="933" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1629998131047" />
+    <state width="210" height="457" key="HiddenNamespacesPopup" timestamp="1630489694200">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="210" height="457" key="HiddenNamespacesPopup/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630489694200" />
     <state x="595" y="155" key="NewPhpClassDialog" timestamp="1629140439225">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="595" y="155" key="NewPhpClassDialog/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1629140439225" />
-    <state x="988" y="356" key="NewPhpFileDialog" timestamp="1629626838783">
+    <state x="988" y="356" key="NewPhpFileDialog" timestamp="1630450219469">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="988" y="356" key="NewPhpFileDialog/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1629140752314" />
+    <state x="988" y="356" key="NewPhpFileDialog/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630450219469" />
     <state x="988" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1629626838783" />
-    <state x="555" y="77" key="SettingsEditor" timestamp="1629140736070">
+    <state x="398" y="82" key="SettingsEditor" timestamp="1630489804407">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="555" y="77" key="SettingsEditor/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1629140736070" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1629710513928">
+    <state x="398" y="82" key="SettingsEditor/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630489804407" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1630275281813">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630275281813" />
     <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1629710513928" />
+    <state x="634" y="131" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1630489761445">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="634" y="131" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.864/1920.-254.1680.1050@0.0.1536.864" timestamp="1630489761445" />
     <state x="570" y="339" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1629710107480">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
