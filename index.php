@@ -3,9 +3,16 @@ require_once "partial/header.php";
 require_once "private.php";
 
 $db = new PDO("mysql:host=" . BDD["addr"] . ";dbname=" . BDD["db"], BDD["user"], BDD["pwd"]);
-$query = $db->query("SELECT * FROM `video` ORDER BY `position`");
 
-$result = $query->fetchAll();
+if(isset($_GET["tag"])){
+    $idtag = $_GET["tag"];
+    $query = $db->query("SELECT `video`.* FROM `video` JOIN tagtovideo t ON video.id = t.idVideo JOIN tag t2 ON t2.id = t.idTag WHERE t2.id = $idtag ORDER BY `position`");
+    $result = $query->fetchAll();
+}else{
+    $query = $db->query("SELECT * FROM `video` ORDER BY `position`");
+    $result = $query->fetchAll();
+
+}
 
 $currentID = filter_input(INPUT_GET, "id");
 
@@ -56,12 +63,17 @@ $error404 = false
             if (!$error404) {
                 ?>
                 <div class="row">
-                    <h2>Pourquoi elle a été ajouté ?</h2>
+                    <h2><label for="reason">Pourquoi elle a été ajouté ?</label></h2>
                     <textarea rows="5" id="reason" class="form-control"></textarea>
+                    <script>
+
+                    </script>
                 </div>
                 <div class="row">
                     <h2>Tag</h2>
-                    <p id="tagList"></p>
+                    <p id="tagList">
+
+                    </p>
                     <script>
 
                         $("#tagList").load("./partial/tagList.php?id=<?= $currentID ?>");
@@ -92,16 +104,15 @@ $error404 = false
                                         <script>
                                             function addTag(tag) {
                                                 $.post("./action/addNewTag.act.php", {
-                                                    videoID: "<?= $currentID ?>",
-                                                    newTag: tag
-                                                },
-                                                    function (){
+                                                        videoID: "<?= $currentID ?>",
+                                                        newTag: tag
+                                                    },
+                                                    function () {
 
-                                                    $("#tagList").load("./partial/tagList.php?id=<?= $currentID ?>");
-                                                $("#unsetTagList").load("./partial/unsetTagList.php?id=<?= $currentID ?>");
-                                            }
-
-                                            )
+                                                        $("#tagList").load("./partial/tagList.php?id=<?= $currentID ?>");
+                                                        $("#unsetTagList").load("./partial/unsetTagList.php?id=<?= $currentID ?>");
+                                                    }
+                                                )
                                             }
 
                                             function addNewTag() {
@@ -128,7 +139,46 @@ $error404 = false
             }
             ?>
         </div>
-        <div class="col-3" style="max-height: 80vh">
+        <div class="col-3 container" style="max-height: 85vh">
+            <div class="row mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <h5 class="card-title">Trier par Tag : <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                                                         data-bs-toggle="dropdown" aria-expanded="false">
+                                    <?php
+                                    if(isset($_GET["tag"])){
+                                        $selectTag= filter_input(INPUT_GET,"tag");
+                                        $query = $db->prepare("SELECT title FROM tag WHERE id=:id");
+                                        $query->bindParam(":id",$selectTag);
+                                        $query->execute();
+                                        $selectTag = $query->fetchAll()[0]["title"];
+                                        echo $selectTag;
+                                    }else{
+                                        echo "Tag...";
+                                    }
+                                    ?>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <?php
+                                    $query = $db->query("SELECT * FROM tag");
+                                    $alltag = $query->fetchAll();
+                                    foreach($alltag as $tag){
+                                        ?>
+                                        <li><a class="dropdown-item" href="?tag=<?= $tag["id"] ?>"><?= $tag["title"] ?></a></li>
+                                        <?php
+                                    }
+                                    ?>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="?">Déselectionner</a></li>
+                                    <li><a class="dropdown-item" href="?">Creer un playlist youtube</a></li>
+                                </ul></h5>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!--                 ________________                        -->
             <!--                |                |_____    __            -->
             <!--                |  I Love You!   |     |__|  |_________  -->
@@ -143,14 +193,18 @@ $error404 = false
             <!--    """`     """`                                        -->
             <!--                                                         -->
             <!--                     Le Tutute-chat                      -->
-            <table class="table table-hover table-striped">
+            <table class="table table-hover table-striped row">
                 <tbody>
                 <?php
                 foreach ($result as $key => $value) {
                     ?>
 
 
-                    <tr onclick="document.location = '?id=<?= $value["id"] ?>'" style="cursor: pointer"
+                    <tr onclick="document.location = '<?php if(isset($_GET["tag"])){
+                        echo "?id=".$value["id"]."&tag=".$_GET["tag"];
+                    }else{
+                        echo "?id=".$value["id"];
+                    }  ?>'" style="cursor: pointer"
                         class="d-flex align-items-stretch <?php
                         if ($value["id"] == $currentID) {
                             echo "table-dark";
@@ -217,25 +271,29 @@ $error404 = false
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal" onclick="deleteFromVideo()">Supprimer de la vidéo
+                <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal"
+                        onclick="deleteFromVideo()">Supprimer de la vidéo
                 </button>
-                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" onclick="deleteTag()">Supprimer le Tag</button>
+                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" onclick="deleteTag()">
+                    Supprimer le Tag
+                </button>
                 <script>
-                    function deleteFromVideo(){
+                    function deleteFromVideo() {
                         tagId = document.getElementById("modifTagId").value
                         $.post("./action/deleteFromVideo.act.php", {
                             video: "<?= $currentID ?>",
                             tag: tagId
-                        },function () {
+                        }, function () {
                             $("#tagList").load("./partial/tagList.php?id=<?= $currentID ?>");
                             $("#unsetTagList").load("./partial/unsetTagList.php?id=<?= $currentID ?>");
                         })
                     }
-                    function deleteTag(){
+
+                    function deleteTag() {
                         tagId = document.getElementById("modifTagId").value;
-                        $.post("./action/deleteTag.act.php",{
+                        $.post("./action/deleteTag.act.php", {
                             tag: tagId
-                        },function () {
+                        }, function () {
 
                             $("#tagList").load("./partial/tagList.php?id=<?= $currentID ?>");
                             $("#unsetTagList").load("./partial/unsetTagList.php?id=<?= $currentID ?>");

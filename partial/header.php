@@ -28,7 +28,7 @@ include_once "../vendor/autoload.php";
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="../../playlistPots/"><img src="https://cdn.discordapp.com/icons/339453187255828480/c2963659a0917adc2236091ab9f749f2.png?size=256" alt="" width="48" height="48" aria-hidden="true"></a>
+        <a class="navbar-brand" href="/"><img src="https://cdn.discordapp.com/icons/339453187255828480/c2963659a0917adc2236091ab9f749f2.png?size=256" alt="" width="48" height="48" aria-hidden="true"></a>
 
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,28 +39,17 @@ include_once "../vendor/autoload.php";
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../../playlistPots/">Playlist du pots</a>
+                    <a class="nav-link active" aria-current="page" href="/">Playlist du pots</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li>
-<!--                <li class="nav-item dropdown">-->
-<!--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                        Dropdown-->
-<!--                    </a>-->
-<!--                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-<!--                        <li><a class="dropdown-item" href="#">Action</a></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Another action</a></li>-->
-<!--                        <li><hr class="dropdown-divider"></li>-->
-<!--                        <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-<!--                    </ul>-->
-<!--                </li>-->
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
-            <a href="../../playlistPots/action/refresh.act.php" class="btn btn-success">Refresh</a>
+            <a href="/action/refresh.act.php" class="btn btn-success">Refresh</a>
         </div>
     </div>
 </nav>

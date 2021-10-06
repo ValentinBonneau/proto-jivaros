@@ -55,7 +55,7 @@ $delete = $db->query("DELETE FROM `video` WHERE NOT ($idColection)");
 var_dump($delete);
 */
 
-header("location:../../../playlistPots/");
+header("location:../../");
 require_once "../partial/footer.php";
 
 

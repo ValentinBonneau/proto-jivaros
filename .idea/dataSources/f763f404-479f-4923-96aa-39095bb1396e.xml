@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
-  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.19">
+  <database-model serializer="dbm" dbms="MARIADB" family-id="MARIADB" format-version="4.23">
     <root id="1">
       <ServerVersion>10.4.14</ServerVersion>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1048,58 +1048,33 @@
     </collation>
     <user id="335" parent="1" name="bitgamecoin">
       <Host>%</Host>
-      <ObjectGrants>ALL PRIVILEGES!
-ALL PRIVILEGES|bitgamecoin:null
-</ObjectGrants>
     </user>
     <user id="336" parent="1" name="blog">
       <Host>localhost</Host>
-      <ObjectGrants>ALL PRIVILEGES!
-</ObjectGrants>
     </user>
     <user id="337" parent="1" name="carnivoresdomestiques">
       <Host>%</Host>
-      <ObjectGrants>ALL PRIVILEGES!
-ALL PRIVILEGES|carnivoresdomestiques:null
-</ObjectGrants>
     </user>
     <user id="338" parent="1" name="eval">
       <Host>%</Host>
-      <ObjectGrants>ALL PRIVILEGES!
-ALL PRIVILEGES|eval:null
-</ObjectGrants>
     </user>
     <user id="339" parent="1" name="pma">
       <Host>localhost</Host>
-      <ObjectGrants>SELECT,INSERT,UPDATE,DELETE|phpmyadmin:null
-</ObjectGrants>
     </user>
     <user id="340" parent="1" name="pots">
       <Host>%</Host>
-      <ObjectGrants>ALL PRIVILEGES!
-ALL PRIVILEGES|pots:null
-</ObjectGrants>
     </user>
     <user id="341" parent="1" name="prof_graves_dev">
       <Host>%</Host>
-      <ObjectGrants>ALL PRIVILEGES!
-ALL PRIVILEGES|prof\_graves\_dev:null
-</ObjectGrants>
     </user>
     <user id="342" parent="1" name="root">
       <Host>127.0.0.1</Host>
-      <ObjectGrants>ALL PRIVILEGES!
-</ObjectGrants>
     </user>
     <user id="343" parent="1" name="root">
       <Host>::1</Host>
-      <ObjectGrants>ALL PRIVILEGES!
-</ObjectGrants>
     </user>
     <user id="344" parent="1" name="root">
       <Host>localhost</Host>
-      <ObjectGrants>ALL PRIVILEGES!
-</ObjectGrants>
     </user>
     <table id="345" parent="10" name="reason"/>
     <table id="346" parent="10" name="tag"/>
